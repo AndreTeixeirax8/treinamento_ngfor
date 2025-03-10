@@ -25,4 +25,10 @@ export class AppComponent {
       age: 56,
     },
   ];
+
+  selectPerson(index: number) {
+    console.log(index);
+    this.personSelectedIndex = index;
+  }
+  personSelectedIndex: number | undefined;
 }
