@@ -1,18 +1,6 @@
 <div class="list">
-  <div class="item item--odd">
-    <p class="item__name">Aluno_01</p>
-    <p class="item__age">26 anos</p>
-  </div>
-  <div class="item item--highlighted">
-    <p class="item__name">Aluno_02</p>
-    <p class="item__age">34 anos</p>
-  </div>
-  <div class="item item--odd">
-    <p class="item__name">Aluno_03</p>
-    <p class="item__age">55 anos</p>
-  </div>
-  <div class="item">
-    <p class="item__name">Aluno_04</p>
-    <p class="item__age">18 anos</p>
+  <div class="item" *ngFor="let person of listPessoas">
+    <p class="item__name">{{ person.name }}</p>
+    <p class="item__age">{{ person.idade }}</p>
   </div>
 </div>
