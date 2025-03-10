@@ -1,6 +1,10 @@
 <div class="list">
-  <div class="item" *ngFor="let person of listPessoas">
-    <p class="item__name">{{ person.name }}</p>
-    <p class="item__age">{{ person.idade }}</p>
+  <div
+    class="item"
+    *ngFor="let person of listPessoas; let i = index; let isOdd = odd"
+    [class.item--odd]="isOdd"
+  >
+    <p class="item__name">{{ i }} - {{ person.name }}</p>
+    <p class="item__age">{{ person.age }}</p>
   </div>
 </div>

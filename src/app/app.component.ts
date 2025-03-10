@@ -10,19 +10,19 @@ export class AppComponent {
   listPessoas = [
     {
       name: 'Aluno_01',
-      idade: 26,
+      age: 26,
     },
     {
       name: 'Aluno_02',
-      idade: 36,
+      age: 36,
     },
     {
       name: 'Aluno_03',
-      idade: 46,
+      age: 46,
     },
     {
       name: 'Aluno_04',
-      idade: 56,
+      age: 56,
     },
   ];
 }
